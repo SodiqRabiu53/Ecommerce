@@ -24,6 +24,29 @@ nav ul li{
     font-weight: bold;
     font-family: Colonna MT;
 }
+/*menu*/
+.menu{
+    display:none;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    
+}
+
+.ham{
+    width: 18px;
+    height: 3px;
+    background-color: white;
+    /* border: 1px solid red; */
+    margin-bottom: 3px;
+}
+
+
+
 a{
     text-decoration: none;
     color: #555;
