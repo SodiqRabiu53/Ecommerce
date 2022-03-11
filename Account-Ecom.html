@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E-com3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Account</title>
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <a href="E-commerce web3.html"><div class="logo">IshT£CH</div></a>
+        <nav>
+            <ul id="menuitems">
+                <li><a href="E-commerce web3.html">Home</a></li>
+                <li><a href="product3.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="Account-Ecom.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart3.html">
+            <!--<img src="D:\PICTURES/FB_IMG_16249129780554134.jpg" width="30px" height="30px">-->
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+
+        <img src="C:\Users\RABIU ISAU\Pictures\Screenshots/Screenshot (69).png" width="30px" height="20px" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+            <div class="col-2">
+                <img src="D:\PICTURES/IMG_20210607_110926_96_prev_ui.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm"> 
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username"> 
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                        
+                    </form>
+
+
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col-1">
+                      <h3>Download Our App</h3>
+                      <p>Download App for Android and ios mobile phone.</p>
+                      <div class="App-logo">
+                          
+                        <img src="D:\PICTURES/Screenshot_20211018-091934 (2).png" alt="">
+                        <img src="D:\PICTURES/Screenshot_20211018-091934 (3).png" alt="">
+                      </div>
+                  </div>
+                  <div class="footer-col-2">
+                    <!--<img src="D:\PICTURES/FB_IMG_16249129780554134.jpg" alt="">-->
+                    <p>Our purpose is To sustainably make the pleasure and Benefits of sports Accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>WhatsApp</li>
+                    </ul>
+                </div>
+
+              </div>
+              <hr>
+              <p class="sod">Develope by <i>IshT£CH</i></p>
+          </div>
+      </div>
+      <script>
+          var menuitems = document.getElementById("menuitems");
+
+          menuitems.style.maxHeight = "0px";
+
+          function menutoggle(){
+              if(menuitems.style.maxHeight == "0px")
+              {
+                menuitems.style.maxHeight = "200px"
+              }
+              else{
+                menuitems.style.maxHeight = "0px"
+              }
+          }
+      </script>
+
+
+               <script>
+                   var LoginForm = document.getElementById("LoginForm");
+                   var RegForm = document.getElementById("RegForm");
+                   var Indicator = document.getElementById("Indicator");
+
+                   function register(){
+                       RegForm.style.transform = "translateX(0px)";
+                       LoginForm.style.transform = "translateX(0px)";
+                       Indicator.style.transform = "translateX(100px)";
+                   }
+                   function login(){
+                       RegForm.style.transform = "translateX(300px)";
+                       LoginForm.style.transform = "translateX(300px)";
+                       Indicator.style.transform = "translateX(0px)";
+                   }
+               </script>
+               
+</body>
+</html>
