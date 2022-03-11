@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+
+     *{
+         padding: 0;
+         margin: 0;
+         font-family: 'Times New Roman', Times, serif;
+         
+     }
+     body{
+         
+         
+    background-image: linear-gradient(rgba(0,0,0,0.4)50%,rgba(0,0,0,0.4)50%), url("D:\PICTURES/Screenshot_20210922-102656_1.png");
+    min-height: 30rem;
+    background-position: center;
+    background-size: cover;
+    font-size: 14px;
+     }
+     .container{
+         width: 80%;
+         margin: 50px auto;
+     }
+     .contact-box{
+         background: #fff;
+         display: flex;
+     }
+     .contact-left{
+         flex-basis: 60%;
+         padding: 40px 60px;
+     }
+     
+     .contact-right{
+         flex-basis: 40%;
+         padding: 40px;
+         background: orangered;
+         color: #fff;
+     }
+     h1{
+         margin-bottom: 10px;
+         font-size: 40px;
+         color: red;
+
+     }
+     .container p{
+          margin-bottom: 40px;
+          font-size: 22px;
+          color: black;
+          font-weight: 500;
+        
+          
+     }
+     .input-row{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+     }
+     .input-row .input-group{
+         flex-basis: 45%;
+     }
+     input{
+         width: 100%;
+         border: none;
+         border-bottom: 1px solid orangered;
+         outline: none;
+         padding-bottom: 5px;
+     }
+     textarea{
+         width: 100%;
+         border: 1px solid orangered;
+         outline: none;
+         padding: 10px;
+         box-sizing: border-box;
+     }
+     label{
+         margin-bottom: 6px;
+         display: block;
+         color: orangered;
+     }
+     button{
+         background: orangered;
+         width: 100px;
+         border: none;
+         outline: none;
+         color: #fff;
+         height: 35px;
+         border-radius: 19px;
+         margin-top: 20px;
+         box-shadow: 0px 5px 15px 0px rgba(8, 5, 1, 0.959);
+     }
+     button:hover{
+        font-size: 1.2rem;
+     }
+     .contact-left h3{
+       color: red;
+       font-weight: bold;
+       font-size: 20px;
+       margin-bottom: 30px;
+       
+     }
+     
+     .contact-right h3{
+       font-weight: bold;
+       font-size: 20px;
+       margin-bottom: 30px;
+       
+     }
+     tr td:first-child{
+         padding-right: 20px;
+     }
+     tr td{
+         padding-top: 20px;
+     }
+     .logo{
+          background: orangered;
+          color: #fff;
+          margin: 10px;
+         border-radius: 3px;
+         text-decoration: none;
+         
+     }
+     
+
+    </style>
+</head>
+<body>
+    <a href="file:///D:/DOCUMENTS/School%20website/school%20web.html#" class="logo">Back to home page</a>
+    <div class="container">
+        <h1>Connect With Us</h1>
+        <p>We would love to respond to your querries and help you successed. <br>feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Sodiq Rabiu">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="number" placeholder="+234">
+                        </div>
+                    </div>
+                        <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="SodiqRabiu53@gmail.com">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Product Demo">
+                        </div>
+                    </div>
+                    <label> Message</label>
+                    <textarea rows="5" placeholder="Your Message...."></textarea>
+                    <button type="submit"> SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+               
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contactus@gmail.com</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>Phone</td>
+                        <td>+234 811 7220 355</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>Address</td>
+                        <td>Sodiq Rabiu street along tojubole juction igboho,<br>
+                        Oyo State,Nigeria.</td>
+                    </tr>
+                </table>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
